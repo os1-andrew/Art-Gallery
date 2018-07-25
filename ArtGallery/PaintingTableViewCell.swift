@@ -25,7 +25,7 @@ class PaintingTableViewCell: UITableViewCell {
             likeButtonDisplay.setTitle("Like", for: .normal)
         }
     }
-
+    
     
     //MARK: IBAction
     @IBAction func likeButtonAction(_ sender: Any) {

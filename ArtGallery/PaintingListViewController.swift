@@ -8,11 +8,12 @@
 
 import UIKit
 
-class PaintingListViewController: UIViewController, UITableViewDataSource, PaintingTableViewCellDelegate {
+class PaintingListViewController: UIViewController, UITableViewDataSource, PaintingTableViewCellDelegate, UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self //not sure
+        tableView.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -23,6 +24,10 @@ class PaintingListViewController: UIViewController, UITableViewDataSource, Paint
         
         tableView.reloadRows(at: [indexPath], with: .fade)
         
+    }
+    //the delegate function
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
