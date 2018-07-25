@@ -23,19 +23,20 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GalleryCell" rowHeight="317" id="PFN-Sq-SMg" customClass="PaintingTableViewCell" customModule="ArtGallery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="317"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GalleryCell" rowHeight="284" id="PFN-Sq-SMg" customClass="PaintingTableViewCell" customModule="ArtGallery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="284"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PFN-Sq-SMg" id="Y6F-SC-UPU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="316.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="283.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-Df-jcS">
-                                                    <rect key="frame" x="15" y="17" width="345" height="257"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-Df-jcS">
+                                                    <rect key="frame" x="40" y="29" width="295" height="213"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufG-Ip-y2Z">
-                                                    <rect key="frame" x="142" y="276" width="90" height="40"/>
+                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufG-Ip-y2Z">
+                                                    <rect key="frame" x="142" y="243" width="90" height="40"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="VBo-83-x73"/>
                                                         <constraint firstAttribute="height" constant="40" id="aMH-su-1At"/>
                                                     </constraints>
                                                     <state key="normal" title="Like"/>
@@ -45,15 +46,12 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ufG-Ip-y2Z" secondAttribute="bottom" constant="-10" id="02R-2B-KY8"/>
-                                                <constraint firstItem="fV1-Df-jcS" firstAttribute="leading" secondItem="Y6F-SC-UPU" secondAttribute="leadingMargin" id="Fe2-XG-ymx"/>
-                                                <constraint firstItem="fV1-Df-jcS" firstAttribute="centerX" secondItem="Y6F-SC-UPU" secondAttribute="centerX" id="UyB-Ks-r7d"/>
-                                                <constraint firstItem="fV1-Df-jcS" firstAttribute="top" secondItem="Y6F-SC-UPU" secondAttribute="topMargin" constant="6" id="Wxl-TM-1fS"/>
-                                                <constraint firstItem="fV1-Df-jcS" firstAttribute="trailing" secondItem="Y6F-SC-UPU" secondAttribute="trailingMargin" id="hRF-as-PcK"/>
-                                                <constraint firstItem="ufG-Ip-y2Z" firstAttribute="centerX" secondItem="Y6F-SC-UPU" secondAttribute="centerX" id="lmZ-3O-lV8"/>
-                                                <constraint firstAttribute="bottom" secondItem="ufG-Ip-y2Z" secondAttribute="bottom" constant="0.5" id="tKX-lM-t7w"/>
-                                                <constraint firstItem="ufG-Ip-y2Z" firstAttribute="top" secondItem="fV1-Df-jcS" secondAttribute="bottom" constant="2" id="uPi-Nc-54f"/>
-                                                <constraint firstItem="ufG-Ip-y2Z" firstAttribute="top" secondItem="fV1-Df-jcS" secondAttribute="bottom" constant="2" id="z5P-9p-Qa9"/>
+                                                <constraint firstItem="fV1-Df-jcS" firstAttribute="centerX" secondItem="ufG-Ip-y2Z" secondAttribute="centerX" id="CKK-zh-fie"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ufG-Ip-y2Z" secondAttribute="bottom" constant="-10" id="Fa0-y0-4XB"/>
+                                                <constraint firstItem="fV1-Df-jcS" firstAttribute="top" secondItem="Y6F-SC-UPU" secondAttribute="topMargin" constant="20" id="GdW-eU-rWI"/>
+                                                <constraint firstItem="fV1-Df-jcS" firstAttribute="leading" secondItem="Y6F-SC-UPU" secondAttribute="leadingMargin" constant="24" id="SRf-VM-Vhl"/>
+                                                <constraint firstItem="ufG-Ip-y2Z" firstAttribute="top" secondItem="fV1-Df-jcS" secondAttribute="bottom" constant="1" id="k6f-0C-Txv"/>
+                                                <constraint firstItem="ufG-Ip-y2Z" firstAttribute="centerX" secondItem="Y6F-SC-UPU" secondAttribute="centerX" id="kCl-uj-D0m"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
